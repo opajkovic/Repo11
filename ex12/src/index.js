@@ -1,18 +1,12 @@
 function splitArrayInGroups(arr, n) {
     var result = [];
     
-    // for (var i =0; i < arr.length; i++) {
-        // var list = arr;
-        // list.splice[i,n]
-        // result = a.split(arr,n);
         for (var i =0; i < arr.length; i++) {
             var list = [];
-            arr.substr(i,i+n);
-            list.push(arr);
-            result.push(list);
-        }             
-
-
+            list = arr.splice(i,n);
+                      
+        result.push(list);
+    }       
         return result; 
  }
 console.log(splitArrayInGroups(["a", "b", "c", "d"], 2)); 
